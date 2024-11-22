@@ -1,3 +1,5 @@
+> This project has been converted from JavaScript to a TypeScript class published on NPM by Andrew G. Knackstedt
+
 ### YaMD5 - Yet another MD5 hasher
 
 I needed an MD5 hasher, and as usual I want small code base, and fast.
@@ -47,21 +49,29 @@ SparkMD5 I kept in a few places (like say, code in md5.end() etc.)
 ### Usage
 
 One pass:
+```js
+    const { MD5 } = require('yamd5.ts');
 
-    YaMD5.hashStr('hello world\n') === "6f5902ac237024bdd0c176cb93063dc4"
+    MD5.hashStr('hello world\n') === "6f5902ac237024bdd0c176cb93063dc4";
+```
 
 Incremental:
-
-    var md5Hasher = new YaMD5();
+```ts
+    import { MD5 } from 'yamd5.ts';
+    const md5Hasher = new MD5();
     ...
     md5Hasher.start();
     md5Hasher.appendStr('hello');
     md5Hasher.appendStr(' ');
     md5Hasher.appendStr('world');
     md5Hasher.appendStr('\n');
-    md5Hasher.end() === '6f5902ac237024bdd0c176cb93063dc4';
+    md5Hasher.digest() === '6f5902ac237024bdd0c176cb93063dc4';
+```
 
 ### License
+
+> Given that Joseph Myers has never declared a license for his code, I will assume it is either
+> MIT or Public Domain. There are zero indicators otherwise and he presents the file as if it's freely-usable.
 
 I don't know what license covers Joseph Myers' code (need
 to find out). In any case, concerning whatever original code I contributed in

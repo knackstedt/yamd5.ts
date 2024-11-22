@@ -6,6 +6,11 @@
     "md5",
     "checksum"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knackstedt/yamd5.ts.git"
+  },
+  "homepage": "https://github.com/knackstedt/yamd5.ts",
   "author": "Andrew Knackstedt",
   "license": "MIT",
   "main": "dist/yamd5.js",
