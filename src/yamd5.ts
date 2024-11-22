@@ -62,17 +62,16 @@ THE SOFTWARE.
 
 **/
 
+let singleton: MD5;
 
 
 /*
-    * Fastest md5 implementation around (JKM md5)
-    * Credits: Joseph Myers
-    *
-    * @see http://www.myersdaily.org/joseph/javascript/md5-text.html
-    * @see http://jsperf.com/md5-shootout/7
-    */
-
-let singleton: MD5;
+* Fastest md5 implementation around (JKM md5)
+* Credits: Joseph Myers
+*
+* @see http://www.myersdaily.org/joseph/javascript/md5-text.html
+* @see http://jsperf.com/md5-shootout/7
+*/
 export class MD5 {
     private dataLength = 0;
     private state = new Int32Array(4);

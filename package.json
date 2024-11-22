@@ -5,7 +5,7 @@
   "keywords": ["md5", "checksum"],
   "author": "Andrew Knackstedt",
   "license": "MIT",
-  "main": "yamd5.js",
+  "main": "dist/yamd5.js",
   "files": [
     "dist/",
     "README.md"
