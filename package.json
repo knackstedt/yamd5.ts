@@ -1,8 +1,11 @@
 {
   "name": "yamd5.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast MD5 implementation in TypeScript",
-  "keywords": ["md5", "checksum"],
+  "keywords": [
+    "md5",
+    "checksum"
+  ],
   "author": "Andrew Knackstedt",
   "license": "MIT",
   "main": "dist/yamd5.js",
